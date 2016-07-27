@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "allowJs": true,
+        "watch": true,
+        "outFile": "output/bundle.js",
+        "inlineSourceMap": true
+    },
+    "exclude": [
+        "node_modules",
+        "output"
+    ]
+}

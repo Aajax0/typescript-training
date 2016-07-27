@@ -1,0 +1,34 @@
+body {
+    background: #000;
+    color: #fff;
+}
+
+#log-output {
+    position: absolute;
+    bottom: 5%;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+
+    padding: 1%;
+
+    font-family: Courier New, Courier, monospace;
+    font-size: 18px;
+    color: lawngreen;
+
+    border: 1px dotted lawngreen;
+
+    overflow-y:auto; 
+}
+
+#log-output .info {
+    color: lightblue; 
+}
+
+#log-output .warn {
+    color: darkorange; 
+}
+
+#log-output .error {
+    color: red; 
+}

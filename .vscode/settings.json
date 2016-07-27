@@ -1,0 +1,8 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.tsserver.trace": "verbose",
+    "editor.formatOnType": true,
+    "editor.renderWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500
+}

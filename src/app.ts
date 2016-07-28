@@ -12,6 +12,7 @@ namespace TypeScriptDemo {
             console.info('the app is loaded');
 
             executeSession1();
+            //executeSession2();
         }
     }
 }

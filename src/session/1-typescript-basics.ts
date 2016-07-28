@@ -1,7 +1,7 @@
 namespace TypeScriptDemo {
     export function executeSession1() {
 
-        console.log(1);
+        console.warn('executing typescript basics session');
 
     };
 }

@@ -9,10 +9,9 @@ namespace TypeScriptDemo {
         }
 
         public boot(): void {
-            console.log('test');
-            console.warn('test');
-            console.info('test');
-            console.error('test');
+            console.info('the app is loaded');
+
+            executeSession1();
         }
     }
 }

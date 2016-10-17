@@ -11,8 +11,10 @@ namespace TypeScriptDemo {
         public boot(): void {
             console.info('the app is loaded');
 
-            executeSession1();
-            //executeSession2();
+            executeSession1(); //basics
+            //executeSession2(); //oop
+            //executeSession3(); //namespaces/modules
+            //executeSession4(); //declaration files
         }
     }
 }

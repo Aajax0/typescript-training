@@ -14,7 +14,6 @@ namespace TypeScriptDemo {
             executeSession1(); //basics
             //executeSession2(); //oop
             //executeSession3(); //namespaces/modules
-            //executeSession4(); //declaration files
         }
     }
 }

@@ -69,8 +69,7 @@ namespace TypeScriptDemoAnswers {
         return [name, score];
     }
 
-    type RandomScore = [string, number];
-    function generateScoresForNames(names: Array<string>): Array<RandomScore> {
+    function generateScoresForNames(names: Array<string>): Array<ExampleTypes.RandomScore> {
         return names.map(name => generateRandomScoreForName(name));
     }
 
@@ -83,15 +82,7 @@ namespace TypeScriptDemoAnswers {
         });
     }
 
-    type NameApiResponse = {
-        name: string,
-        score: number,
-        languages: {
-            list: Array<string>
-        }
-    };
-
-    function getPerson(): Promise<NameApiResponse> {
+    function getPerson(): Promise<ExampleTypes.NameApiResponse> {
         const response = {
             name: 'Rob',
             score: 5,
@@ -99,7 +90,7 @@ namespace TypeScriptDemoAnswers {
                 list: ['TypeScript']
             }
         }
-        return new Promise<NameApiResponse>((resolve, reject) => {
+        return new Promise<ExampleTypes.NameApiResponse>((resolve, reject) => {
             setTimeout(() => {
                 resolve(response);
             }, 1000);

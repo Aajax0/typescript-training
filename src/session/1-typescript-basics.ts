@@ -24,15 +24,15 @@ namespace ExampleTypes {
     export type ExampleFunc7 = (pet: Bird | Fish) => pet is Bird;
 }
 
-namespace TypeScriptDemo {
-    let example1: ExampleTypes.ExampleFunc1;
-    let example2: ExampleTypes.ExampleFunc2;
-    let example3: ExampleTypes.ExampleFunc3;
-    let example4: ExampleTypes.ExampleFunc4;
-    let example5: ExampleTypes.ExampleFunc5;
-    let example6: ExampleTypes.ExampleFunc6;
-    let example7: ExampleTypes.ExampleFunc7;
+let example1: ExampleTypes.ExampleFunc1;
+let example2: ExampleTypes.ExampleFunc2;
+let example3: ExampleTypes.ExampleFunc3;
+let example4: ExampleTypes.ExampleFunc4;
+let example5: ExampleTypes.ExampleFunc5;
+let example6: ExampleTypes.ExampleFunc6;
+let example7: ExampleTypes.ExampleFunc7;
 
+namespace TypeScriptDemo {
     export function executeSession1() {
         console.warn('executing typescript basics session');
     };

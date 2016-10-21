@@ -1,24 +1,5 @@
-let a: string;
-let b: number;
-let c: boolean;
-enum Directions {
-    Up,
-    Down,
-    Left,
-    Right
-}
-let x: any;
-let exampleFunc: (name: string, length: number) => boolean;
-
 namespace ExampleTypes {
-    export type ExampleFunc1 = (name: string, length: number) => boolean;
-    export type ExampleFunc2 = (name: string) => [string, number];
-    
     export type RandomScore = [string, number];
-
-    export type ExampleFunc3 = (names: Array<string>) => Array<RandomScore>;
-    export type ExampleFunc4 = (...names: Array<string>) => Array<{ name: string, score: number }>;
-
     export type NameApiResponse = {
         name: string,
         score: number,
@@ -26,16 +7,19 @@ namespace ExampleTypes {
             list: Array<string>
         }
     };
-
-    export type ExampleFunc5 = () => Promise<NameApiResponse>;
-
     export class Bird {
         fly() {};
     };
     export class Fish {
         swim() {};
     }
-
+}
+namespace ExampleTypes {
+    export type ExampleFunc1 = (name: string, length: number) => boolean;
+    export type ExampleFunc2 = (name: string) => [string, number];
+    export type ExampleFunc3 = (names: Array<string>) => Array<RandomScore>;
+    export type ExampleFunc4 = (...names: Array<string>) => Array<{ name: string, score: number }>;
+    export type ExampleFunc5 = () => Promise<NameApiResponse>;
     export type ExampleFunc6 = () => Bird | Fish;
     export type ExampleFunc7 = (pet: Bird | Fish) => pet is Bird;
 }
